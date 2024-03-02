@@ -26,7 +26,7 @@ constructor(name: string, age: number, weight: number, height: number, isRetired
 public printAll()
 {
     return `Name: ${this.name}\nAge: ${this.age}\nWeght: ${this.weight}\nHeight: ${this.height}
-Is retired: ${this.isRetired}\nCountry: ${this.nationality}\nOScars: ${this.oscarsNumber}\nProfession: ${this.profession}`
+Is retired: ${this.isRetired}\nCountry: ${this.nationality}\nOScars: ${this.oscarsNumber}\nProfession: ${this.profession}\n`
 }
 
 }
