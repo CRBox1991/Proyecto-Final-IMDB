@@ -33,17 +33,27 @@ export class Movie
     }
     
     public toString(): string{
-        let result:string = `Title: ${this.title}\nreleaseYear: ${this.releaseYear}\nactors:\n `
+        let result: string = "Title: " + this.title +
+        "\nreleaseYear: " + this.releaseYear +
+        "\nactors:\n " 
 
-        for (let i = 0; i< this.actors.length; i ++){
-            result += `${this.actors[i].printAll()}\n`
+            for (let i = 0; i< this.actors.length; i ++){
+            result += this.actors[i].printAll() + "\n"
         }
-        result += `Nacionality: ${this.nacionality}\nDirector:\n ${this.director.printAll()}\n`;
-        result += `Writer:\n ${this.writer.printAll()}\nLanguage:${this.language}\nPlataforma:${this.plataforma}`;
-        result += `IsMCU:${this.IsMCU}\nMain character name:${this.mainCharacterName}\nProducer:${this.producer}`;
-        result += `Distributor:${this.distributor}\nGenre: ${this.genre}\n`;
-
-        return result; 
+        result += "Nacionality: " + this.nacionality + 
+        "\nDirector:\n " + 
+        this.director.printAll() +
+        "\nWriter:\n " +
+        this.writer.printAll() +
+        "\nLanguage: " + this.language +
+        "\nPlataforma: " + this.plataforma +
+        "\nIsMCU: " + this.IsMCU + 
+        "\nMain character name: " + this.mainCharacterName +
+        "\nProducer: " + this.producer +
+        "\nDistributor: " + this.distributor + 
+        "\nGenre: " + this.genre + "\n";  
+        
+        return(result) 
     }
 }
 
