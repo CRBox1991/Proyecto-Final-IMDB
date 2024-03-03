@@ -20,7 +20,7 @@ movie2.actors = [profesional3, profesional6];
 movie2.director = profesional8;
 movie2.writer = profesional7;
 
-let movie3 = new Movie ("BAli G", 2006, "English", "Comedy");
+let movie3 = new Movie ("Ali G", 2006, "English", "Comedy");
 movie3.actors = [profesional2, profesional3];
 movie3.director = profesional4;
 movie3.writer = profesional5;
