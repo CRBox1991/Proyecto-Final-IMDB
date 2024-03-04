@@ -1,7 +1,7 @@
 import { Imdb } from "./imdb";
 import { Movie } from "./Movie";
 import { Profesional } from "./profesional";
-import {readFileSync,writeFileSync} from "fs"
+const fs = require("fs")
 
 
 
@@ -51,6 +51,6 @@ let myMovieArr: Movie [] = [movie1, movie2, movie3]
 let myMovies = new Imdb(myMovieArr)
 console.log(JSON.stringify(myMovies));
 
-fs.writeFileSync("imdbBBDD.json", JSON.stringify(myMovies))
+fs.writeFileSync("imbsBBDD.json",JSON.stringify(myMovies))
 
 
