@@ -1,6 +1,9 @@
 import { Imdb } from "./imdb";
 import { Movie } from "./Movie";
 import { Profesional } from "./profesional";
+import {readFileSync,writeFileSync} from "fs"
+
+
 
 let profesional1 = new Profesional('Leonardo DiCaprio', 49, 85, 183, false, 'EEUU', 1, 'actor')
 let profesional2 = new Profesional('Sacha Noam Baron Cohen', 42, 87, 191, false, 'England', 3, 'actor')
@@ -43,6 +46,11 @@ movie3.distributor = "Universal Studios"
 movie3.actors = [profesional2, profesional3];
 movie3.director = profesional4;
 movie3.writer = profesional5;
+let myMovieArr: Movie [] = [movie1, movie2, movie3]
 
-let myMovies: Movie [] = [movie1, movie2, movie3];
-console.log(myMovies);
+let myMovies = new Imdb(myMovieArr)
+console.log(JSON.stringify(myMovies));
+
+fs.writeFileSync("imdbBBDD.json", JSON.stringify(myMovies))
+
+

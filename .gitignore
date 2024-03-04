@@ -1,5 +1,4 @@
 *.js
-Movie.js
-testMovie.js
-profesional.js
-profesionalTest.js
+node_modules
+package-lock.json
+package.json
