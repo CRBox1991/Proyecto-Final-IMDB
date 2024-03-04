@@ -16,19 +16,20 @@ export class Movie
     public distributor: string;
     public genre: string;
 
-    constructor(title, releaseYear, nacionality, genre)
+    constructor(title: string, releaseYear: number, nacionality: string, genre: string)
     {
         this.title = title
         this.releaseYear = releaseYear
+        this.actors;
         this.nacionality = nacionality
         this.director;
         this.writer;
-        this.language = ""
-        this.plataforma = ""
-        this.IsMCU = false;
-        this.mainCharacterName = ""
-        this.producer = ""
-        this.distributor = ""
+        this.language;
+        this.plataforma;
+        this.IsMCU
+        this.mainCharacterName
+        this.producer
+        this.distributor
         this.genre = genre;    
     }
     
@@ -36,15 +37,15 @@ export class Movie
         
         let result: string = "Title: " + this.title +
         "\nreleaseYear: " + this.releaseYear +
-        "\nactors:\n " 
+        "\nactors:\n" 
 
             for (let i = 0; i< this.actors.length; i ++){
             result += this.actors[i].printAll() + "\n"
         }
-        result += "Nacionality: " + this.nacionality + 
-        "\nDirector:\n " + 
+        result += "Movie Nacionality: " + this.nacionality + 
+        "\nDirector:\n" + 
         this.director.printAll() +
-        "\nWriter:\n " +
+        "\nWriter:\n" +
         this.writer.printAll() +
         "\nLanguage: " + this.language +
         "\nPlataforma: " + this.plataforma +

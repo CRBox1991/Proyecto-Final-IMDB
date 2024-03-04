@@ -1,12 +1,12 @@
 import { Profesional } from "./profesional";
-//import {Movies} from "./movies";
+import { Movie } from "./Movie";
 
 export class Imdb
 {
     public movies: Movie []
     constructor(movies: Movie [])
     {
-        this.movies = movies
+       this.movies = movies
     }
 }
 
