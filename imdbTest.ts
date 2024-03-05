@@ -49,14 +49,23 @@ movie3.writer = profesional5;
 let myMovieArr: Movie [] = [movie1, movie2, movie3]
 
 let myMovies = new Imdb(myMovieArr)
-console.log(JSON.stringify(myMovies));
 
-fs.writeFileSync("imdbBBDD.json",JSON.stringify(myMovies))
+myMovies.escribirEnFicheroJSON("blahblah.json")
 
-let myMovieRead = fs.readFileSync("imdbBBDD.json");
-myMovieRead = JSON.parse(myMovieRead)
+console.log(myMovies.obtenerInstanciaIMDB("blahblah.json"))
 
-console.log(myMovieRead);
+// console.log(JSON.stringify(myMovies));
+
+// fs.writeFileSync("newImdbBBDD.json",JSON.stringify(myMovies))
+
+// let myMovieRead = fs.readFileSync("imdbBBDD.json");
+// myMovieRead = JSON.parse(myMovieRead)
+
+// console.log(myMovieRead);
+
+
+
+
 
 
 
